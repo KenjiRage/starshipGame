@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- res/layout/dialog_nombre_dificultad.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText para ingresar el nombre -->
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nombre de jugador"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:autofillHints="username"
+        android:inputType="text"
+        android:importantForAutofill="yes"
+        android:focusable="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spinner para seleccionar la dificultad -->
+    <Spinner
+        android:id="@+id/spinnerDificultad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/spinner_background" />
+
+    <!-- Credits TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manuel Jesus Cebador Sandéz"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:paddingTop="8dp" />
+</LinearLayout>
